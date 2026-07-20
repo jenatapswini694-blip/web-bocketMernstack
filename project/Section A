@@ -1,0 +1,29 @@
+1.What does HTML stands for ?
+A-It stands for Hyper Text Markup Language.
+
+2.Who is known as the inventor of HTML?
+A-Tim Berner-Lee
+
+3.Which tag is used to create a paragraph?
+-<p>
+
+4.What is the purppose of the <br> tag?
+-it inserts a line break.
+
+5.Which is used for bold text?
+-<b>
+
+6.What is difference between <b> and <strong>?
+-<b>makes the text bold , <strong>=makes text bold and indicates important content.
+
+7.Which os tag used for insert an image?
+-<img>
+
+8.What is the use of the the <a> tag?
+-to create hyperlinks
+
+9.Which attribute is used in forms to specify where data should be sent?
+-action
+
+10.What is the purpose of the <input>tag?
+-To create input fields in a form.

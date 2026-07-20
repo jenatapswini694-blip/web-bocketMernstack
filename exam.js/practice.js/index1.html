@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change text</title>
+</head>
+<body>
+    <p class="text_content" style="color:blueviolet;"> click me</p>
+    <script src="script.js"></script>
+
+     <h1 id="message">Hello, World!</h1>
+
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").textContent = "Button Clicked!";
+        }
+    </script>
+</body>
+</html>

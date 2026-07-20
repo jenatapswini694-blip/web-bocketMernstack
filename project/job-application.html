@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job-application</title>
+    <style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #9b9b9b;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    background: #ffffff;
+    border: 2px solid #2f6fed;
+    border-radius: 6px;
+    width: 700px;
+    max-width: 100%;
+    padding: 36px 44px 28px;
+  }
+  h1.title {
+    margin: 0 0 28px 0;
+    font-size: 32px;
+    font-weight: 800;
+    color: #14142b;
+  }
+  h1.title span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f6fed;
+  }
+  .row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 18px;
+  }
+  .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #14142b;
+    margin-bottom: 6px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #333;
+    width: 100%;
+  }
+  textarea {
+    resize: none;
+    height: 90px;
+  }
+  select {
+    appearance: none;
+    background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="%23555"/></svg>') no-repeat right 12px center;
+  }
+  .file-wrap {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: #666;
+  }
+  .file-wrap button {
+    border: none;
+    background: #e5e5e5;
+    border-radius: 3px;
+    padding: 6px 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .apply-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+  }
+  .apply-btn {
+    background: #e8121b;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="title">Job Application <span>(Web)</span></h1>
+
+    <form>
+      <div class="row">
+        <div class="field">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+        <div class="field">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="field">
+          <label for="jobRole">Job Role</label>
+          <select id="jobRole" name="jobRole">
+            <option>Select Job Role</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>UI/UX Designer</option>
+            <option>Project Manager</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="address">Address</label>
+          <textarea id="address" name="address"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city">
+        </div>
+        <div class="field">
+          <label for="pincode">Pincode</label>
+          <input type="text" id="pincode" name="pincode">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="startDate">Start Date</label>
+          <input type="date" id="startDate" name="startDate" value="2022-01-12">
+        </div>
+        <div class="field">
+          <label for="cv">Upload You Cv</label>
+          <div class="file-wrap">
+            <button type="button">Choose file</button>
+            <span>No File Chosen</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="apply-row">
+        <button type="submit" class="apply-btn">Apply Now</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+</head>
+<body>
+    
+</body>
+</html>

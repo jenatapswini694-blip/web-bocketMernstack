@@ -844,4 +844,177 @@ Event Object ->
 
 practice task ->
 
-Q.create a toggle buttopn that changes the screen to dark mode when clicked and light mode when clicked and light mode when click again.
+Q.create a toggle buttopn that changes the screen to dark mode when clicked and light mode when clicked and light mode when click again. 
+
+
+
+
+
+Asynchronous - 
+-Due to 
+
+
+-Due to synchronous programming , sometimes imp. instruction get blocked 
+-asynchronous code execution allows to execute next instruction immidiately and doesn't block the flow.
+
+
+
+ex.
+console.log("one")
+console.log("two")
+setTimeout(() =>{
+  console.log("three")
+},4000) // 4000 ms = 4s
+console.log("four")
+console.log("five")
+
+output -> one,two,three,four,five, three
+
+
+callback in js ->
+
+- a callback function which passed as an arguument of another function.
+
+callback hell ->
+
+
+-it's a nested callback stacked below one after another forming a pyramid structure.
+-this style of programming becomes difficult to understand and manage.
+
+promise in js->
+-it is a solution of callbackk hell.
+-syntax :- 
+
+let promise = new promise ((resolve,reject) => {
+  //statement
+}) 
+
+- a javascript promise object can be ->>
+   1. pending = the result is undefined
+   2. the result is a value (fulfiled)
+   3. reject = the result is an error
+
+-promise.then((res)=>{
+  //statement
+})
+
+-promise.catch((err)=>{
+  //statement
+})
+
+async & await in js =>
+-asynnc function myFunc(){
+  //statement
+}
+NOTE=> await pauses the execution of its sorrounding async function until yhe promise is fulfiled .
+
+API handling/fetch API ->
+
+- the fetch API provides an interface for fetching data .
+- it uses request & response object
+-the Fetch ( methods) is used to fetch a data .
+-syntax=>
+   let demo = fetch(URL)
+
+   Status code of Node js-
+
+   - 200 - ok
+   - 201 -  created
+   - 202 - accepted
+   - 300 - multiple choice
+   - 302- found
+   - 400- bad request
+   - 402- payment required
+   - 404- not found
+   - 406- not accept
+   - 408- request timeout
+   - 500- internal server error
+   - 504- gateway timeout
+
+React JS->
+ it is a frontend js library.
+ - react was develop by fcebook by softerengineer jorden walk.
+ - eract is also knowen as react js or ReactJs.
+ - basically react is a tool for building UI component.
+
+
+ Package.json-> uses=>
+              -all installation are stored in json.
+              -manages project dependacies.
+              -enable one-command installation(elimnate heavy files sharing, restores environments instantly ).
+              - define project metadata
+              
+ packagelog.json ->              
+
+
+ NPX- 
+ - npx stands for Node Package Execute.
+ - purpose-> it is a npm package runner bundled automatically with npm.
+ - function-> it allowes you to run and execute js package directly from the npm,without needing to install them permanently.
+ - storage-> it downlode the package to a temporary cache memory,
+             execute the command and clear it uo writr after.
+
+ 
+
+ NPM:-
+
+ - it stands for  Node Package Manager
+ - purpose-> it is the diffult package manager for the node js.
+ - function-> it instal,update,and delete js package and dependencies for projrct.
+ - storage-> it save package permanently either locally inside our project "node module" folder or globally on our system.
+
+
+ Racte js History:-
+
+ - latest version of react js is 19.2.7
+ - initial release to the public was in july 2013.
+ - react js fist introduce or used in 2011 for facebook newfeed feature.
+ - initially react gained lost of hate for the mix of js + html  but in later stage or now these days 45% of software developer   used react js as the core library for softwarw developement.
+ - "jsx" is the extension of react js.
+ - jsx stands for  "javascript XML"  means (javascript + html)
+
+------------------------------------------------------------------------------------------------------------------
+
+- when you are installing react it will have multiple way to install and setup but there are 2 common way that we are using react js is:-
+1. CRA(creat-react-app)
+2. vite(fastest way to install react js)
+
+
+
+File structure of react js folder:-
+ 
+ 1. readme.md ->
+  -  we will use readme.md for writr some description or out line of our projrct.
+
+ 2. package.json-> 
+  - it will keep script, version details or dependancy of our projrct.
+
+3. package.lock.json->
+ - it basically store dependancy of package.json file.
+
+4. .gitignore->
+    - files and folder ignored by git tracking..
+
+5. src(source folder)->
+ - it is the main source folder where we can create file and write code in it
+
+6. public:-
+ - it is used to take our website logo that show publically and we can store image and vdo in that public folder by creating separate separate folder
+
+7.
+
+About.js                                 contact.js                         App.js                            index.js                   index.HTML
+--------                               --------------                     -----------                          -----------              -----------
+import React from React           import React from React               import react from Ract                document root.......       (div id=
+function About(){                 function contact (){                  import about from'About.js'            root.render()               'root')
+  return......                        return.....                       import cintact from'contact_js'         <react>                    <div>
+}                                    }                                                                           <app>
+export default About               export default contact                 function APP()                         <react>{                                                                             <div> <About>                            
+                                                                               <demo>                                                  
+                                                                               <div>                                                    
+                                                                              } 
+                                                                           export default APP
+                                                                            
+RAFCE -> React Arrow Functional Component Expression
+RFCE  -> REact functional Component Expression
+
